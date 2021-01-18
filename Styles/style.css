@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+/* ==> Global <== */
+:root {
+    --dark-blue: #363f5f;
+    --cor-background : #F9f9f9;
+    --cor-white : #FFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #090909;
+}
+
+.form {
+    position: relative;
+    width: 450px;
+    padding: 40px 40px 60px;
+    background: var(--dark-blue);
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: -5px -5px 10px rgba(255,255,255,.05),
+                5px 5px 15px rgba(0,0,0,.5);
+}
+
+.form h2 {
+    color: #02f78d;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    font-weight: 600;
+}
+.form .input {
+    text-align: left;
+    margin-top: 40px;
+}
+
+.form .input .inputBox {
+    margin-top: 20px;
+}
+
+.form .input .inputBox label {
+    display: block;
+    color: #807676;
+    margin-bottom: 5px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.form .input .inputBox input {
+    width: 100%;
+    height: 50px;
+    background: #131419;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    padding: 5px 15px;
+    color: var(--cor-white);
+    font-size: 18px;
+    font-weight: 600;
+    color: #03a9f4;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,.1),
+                inset 2px 2px 6px rgba(0,0,0,.8);    
+}
+
+.form .input .inputBox input[type="submit"] {
+    margin-top: 20px;
+    box-shadow: -2px -2px 6px rgba(255,255,255,.1),
+                 2px 2px 6px rgba(0,0,0,.8);    
+}
+
+.form .input .inputBox input[type="submit"]:active {
+    color: #FFF;
+    margin-top: 20px;
+    box-shadow: inset -2px -2px 6px rgba(255,255,255,.1),
+                inset 2px 2px 6px rgba(0,0,0,.8);    
+}
+
+.form .input .inputBox input::placeholder {
+    color: rgb(9, 214, 95);
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.forget {
+    margin-top: 30px;
+    color: #02f78d;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.forget a {
+    color: #03a9f4;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.forget a:hover {
+    color: #FFF;
+}
